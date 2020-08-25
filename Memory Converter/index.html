@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h1 class="heading">Memory converter</h1>
+    <p class="para">Convert from Bytes to GigaBytes</p>
+    <section>
+      <form>
+        <label>Input value in Bytes:-</label>
+        <input type="text" class="text" id="text"/>
+        <div class="buttons">
+          <input type="button" value="Convert" class="submit-button" onclick="answer()" />
+          <input type="button" value="Reset" class="reset" onclick="resetFn()" />
+        </div>
+        <label id="answer">0 GigaByte</label>
+      </form>
+    </section>
+  </body>
+</html>
