@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="heading">Tic-Tac-Toe</h1>
+    <section>
+      <form class="player-form">
+        <div class="text">
+          <label>Player-1 Name</label>
+          <input type="text" id="p1" class="p1-text" placeholder="First player" />
+        </div>
+        <div class="text">
+          <label>Player-2 Name</label>
+          <input type="text" id="p2" class="p2-text" placeholder="Second Player" />
+        </div>
+        <div class="form-button">
+          <input id="start-button" type="button" class="start-button" value="Start" onclick="startGame()" />
+          <input type="button" class="reset-button" value="Reset" onclick="resetGame()"/>
+        </div>
+      </form>
+      <h3 class="hide turn" id="turn">Turn: </h3>
+      <div class="hide board" id="board">
+        <div class="row">
+          <div class="cell" id="00" onclick="handleClick(this)"></div>
+          <div class="cell" id="01" onclick="handleClick(this)"></div>
+          <div class="cell" id="02" onclick="handleClick(this)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="10" onclick="handleClick(this)"></div>
+            <div class="cell" id="11" onclick="handleClick(this)"></div>
+            <div class="cell" id="12" onclick="handleClick(this)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="20" onclick="handleClick(this)"></div>
+            <div class="cell" id="21" onclick="handleClick(this)"></div>
+            <div class="cell" id="22" onclick="handleClick(this)"></div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
